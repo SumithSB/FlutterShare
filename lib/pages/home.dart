@@ -13,7 +13,6 @@ import 'package:fluttershare/pages/search.dart';
 import 'package:fluttershare/pages/upload.dart';
 import 'package:fluttershare/pages/timeline.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:fluttershare/pages/profile.dart';
 
 final GoogleSignIn googleSignIn = GoogleSignIn();
 final StorageReference storageRef = FirebaseStorage.instance.ref();
@@ -24,6 +23,7 @@ final activityFeedRef = Firestore.instance.collection('feed');
 final followersRef = Firestore.instance.collection('followers');
 final followingRef = Firestore.instance.collection('following');
 final timelineRef = Firestore.instance.collection('timeline');
+final documentRef = Firestore.instance.collection('messages');
 
 final DateTime timestamp = DateTime.now();
 User currentUser;

@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:fluttershare/chats/main_screen.dart';
+import 'package:fluttershare/pages/home.dart';
 
-header(context,{bool isAppTitle = false,String titleText,removeBackButton = false}) {
+header(context,
+    {bool isAppTitle = false,
+    String titleText,
+    removeBackButton = false,
+    isAction: false}) {
   return AppBar(
     automaticallyImplyLeading: removeBackButton ? false : true,
     title: Text(
@@ -13,5 +19,21 @@ header(context,{bool isAppTitle = false,String titleText,removeBackButton = fals
     ),
     centerTitle: true,
     backgroundColor: Theme.of(context).accentColor,
+    actions: isAction
+        ? <Widget>[
+            IconButton(
+              icon: Icon(Icons.send),
+              onPressed: () {
+                print("userId");
+                print(currentUser.id);
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) =>
+                            MainScreen(currentUserId: currentUser.id)));
+              },
+            )
+          ]
+        : null,
   );
 }

@@ -29,11 +29,16 @@ dependencies:
   image: ^2.0.7
   animator: ^1.0.0+5
   cupertino_icons: ^0.1.2
-  path_provider: ^0.5.0+1
+  path_provider: ^1.6.5
   firebase_messaging: ^4.0.0+1
   timeago: 2.0.17
-  cached_network_image:
-  flutter_svg:
+  flutter_svg: ^0.17.4
+  fluttertoast: ^4.0.1
+  shared_preferences: ^0.5.6+3
+  cached_network_image: ^2.1.0+1
+  intl: ^0.16.1
+  photo_view: ^0.9.2
+  flutter_local_notifications: ^1.4.1
 
 dev_dependencies:
   flutter_test:
@@ -55,3 +60,13 @@ flutter:
     - assets/images/search.svg
     - assets/images/activity_feed.svg
     - assets/images/no_content.svg
+    - images/img_not_available.jpeg
+    - images/mimi1.gif
+    - images/mimi2.gif
+    - images/mimi3.gif
+    - images/mimi4.gif
+    - images/mimi5.gif
+    - images/mimi6.gif
+    - images/mimi7.gif
+    - images/mimi8.gif
+    - images/mimi9.gif
